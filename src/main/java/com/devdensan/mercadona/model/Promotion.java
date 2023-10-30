@@ -1,11 +1,23 @@
 package com.devdensan.mercadona.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "promotions")
 public class Promotion {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "promotion_id", updatable = false)
     private int promotionId;
+    @Column(name = "discount_percentage")
     private int discountPercentage;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "start_date")
     private LocalDate startDate;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "end_date")
     private LocalDate endDate;
 
     public Promotion() {

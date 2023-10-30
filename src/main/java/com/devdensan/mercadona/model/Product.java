@@ -1,12 +1,27 @@
 package com.devdensan.mercadona.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "products")
 public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "product_id", updatable = false)
     private int productId;
+    @Column(name = "product_name")
     private String productName;
+    @Column(name = "description")
     private String description;
+    @Column(name = "image")
     private String image;
+    @Column(name = "price")
     private float price;
+    @ManyToOne
+    @JoinColumn(name = "category_id")
     private Category category;
+    @OneToOne
+    @JoinColumn(name = "promotion_id")
     private Promotion promotion;
 
     public Product() {
