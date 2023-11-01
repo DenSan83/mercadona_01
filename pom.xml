@@ -11,7 +11,7 @@
 	<groupId>com.devdensan</groupId>
 	<artifactId>mercadona</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>mercadona</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
+			<scope>compiled</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
