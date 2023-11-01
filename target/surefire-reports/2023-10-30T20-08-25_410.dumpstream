@@ -1,0 +1,5 @@
+# Created at 2023-10-30T20:08:25.648
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Studi\26.proj-mercadona\project\02\mercadona\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

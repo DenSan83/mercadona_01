@@ -1,0 +1,10 @@
+com\devdensan\mercadona\model\Category.class
+com\devdensan\mercadona\repository\CategoryRepository.class
+com\devdensan\mercadona\configuration\ProductConfig.class
+com\devdensan\mercadona\repository\ProductRepository.class
+com\devdensan\mercadona\ServletInitializer.class
+com\devdensan\mercadona\controller\ProductController.class
+com\devdensan\mercadona\MercadonaApplication.class
+com\devdensan\mercadona\model\Product.class
+com\devdensan\mercadona\model\Promotion.class
+com\devdensan\mercadona\service\ProductService.class
